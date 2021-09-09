@@ -1,9 +1,10 @@
 .App {
   text-align: center;
-  border: 3px solid pink;
   display: flex;
   flex-direction: column;
   align-items: center;
+  height: 100vh;
+  background-color: powderblue;
 }
 
 .App-logo {
