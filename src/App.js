@@ -5,7 +5,6 @@ import axios from 'axios'
 import { BASE_URL, API_KEY } from './constants/index'
 import PhotoCard from "./components/Photo";
 
-
 function App() {
   const [cardData, setCardData] = useState('');
 
