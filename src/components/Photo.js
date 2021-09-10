@@ -28,6 +28,10 @@ const StyledCard = styled.div`
         justify-content: space-between;
         color: slategray;
         width: 80%;
+
+        &:hover {
+            font-weight: bold;
+        }
     }
     .card-body {
         /* border: 3px solid green; */
@@ -40,7 +44,11 @@ const StyledCard = styled.div`
         /* border: 2px solid orange; */
         width: 95%;
         font-size: 12px;
-        color: darkslategray
+        color: darkslategray;
+
+        &:hover {
+            font-weight: bolder;
+        }
     }
 `
 const NasaImg = styled.img`
@@ -64,7 +72,7 @@ export default function PhotoCard({date, title, description}) {
     }, [])
     return (
         <StyledCard>
-            <div className='card-container'>
+            <section className='card-container'>
                 <div className='card-title'>
                     <p className='image-title'>{title}</p>
                     <p className='card-date'>{date}</p>
@@ -73,7 +81,7 @@ export default function PhotoCard({date, title, description}) {
                     <NasaImg className='card-img' src={dailyPic} alt='NASA pic of the day'/>
                     <p className='description'>{description}</p>
                 </div>
-            </div>
+            </section>
         </StyledCard>
     )
 }
